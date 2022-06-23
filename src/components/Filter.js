@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Filter({ onCategoryChange }) {
+  const [search, setSearch] = useState("")
   return (
     <div className="Filter">
       <input type="text" name="search" placeholder="Search..." />
